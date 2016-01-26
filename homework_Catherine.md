@@ -2,106 +2,113 @@
 ###2016.01.12
 小黑老師上了第一堂課
 
-______
+*******
 
 1.顯示標題
 
-	#表示字放大
+	#表示字放大(如果前面有Tab 則可以表示出#, *letter*, **Bold**)
+    # (大標題 自動有分格線)
+    ## (自動有分格線)
+    ###
+    ####
+    #####
+
+#Hi (大標題 自動有分格線)
+##everyone (自動有分格線)
+###nice to meet you again
+####that's make some noice!
+#####note 空白兩隔  即換行
+
 2.特殊字體表示
 
-	強調，斜體，可以使用 *斜體* 或 _斜體_。(*letter*)
+    強調，斜體，可以使用 *斜體* 或 _斜體_。(*letter*)
 
-	加重語氣的強調，例如粗體，可以用 **粗體** 或 __粗體__。
+    加重語氣的強調，例如粗體，可以用 **粗體** 或 __粗體__。
 
-	你還可以混用這兩種 **asterisks and _underscores_**。
+    你還可以混用這兩種 **asterisks and _underscores_**。
 	
-	替文字加上刪除線，像這樣 ~~加上刪除線~~
+    替文字加上刪除線，像這樣 ~~加上刪除線~~
+
+*斜體* **粗體**  ~~加上刪除線~~
+
 3.LIST
--List 我
-    -List 要
-    	-List 打
-    		-List 十
-    			-list個
 
-- 第一層List
-    - 第二層List，和第一層隔4個空白字元或是tab
-        - 第三層List，和第二層隔4個空白字元或是tab
-        <a name="test"/>
-[連連看](#test)
-1. 第一則列表項目
-2. 另一個項目
-⋅⋅* 無序的次清單。
-1. 數字本身是否排序並不重要，通通使用相同的數字也可以。
-⋅⋅1. 排序的次清單。
-4. 另一個項目
+    -text examples
+- text1
+- text2
+- text3
 
-⋅⋅⋅你可以在一則項目中使用縮進的段落格式。注意上面的**空行**，還有本段前的**空格**（至少一個，我們使用了三個，讓呈現更清楚）。
+4.表格
 
-⋅⋅⋅在一個段落中**強制換行**，在語句後方加入兩個**空格**。⋅⋅
-⋅⋅⋅這個被強制設定的獨立行，依舊在同一個段落中。⋅⋅
-⋅⋅⋅（有些人覺得使用空格強制換行太麻煩，例如 GFM 就根本不需要）。
+    |Table        |  alpha    |
+    |-------------|:---------:|
+    | abc         |def        |
+    |def          |ghi|
+    |ghi|jkl|
+    |位置不用太在意
 
-* 可以使用星號建立無序清單
-- 或是短橫線（負號）
-+ 使用半形加號也可以
-階層式區塊用兩個大於符號(>>)：
-> 新北市
->>板橋區
 
->>中和區
 
-> 桃園縣
->>大溪鎮
+|Table        |  alpha    |
+|-------------|:---------:|
+| abc         |def        |
+|def          |ghi|
+|ghi|jkl|
 
->>龜山鄉
-新北市
 
-板橋區
+5.LIST
 
-中和區
-桃園縣
+    *text example
 
-大溪鎮
+* text1
+* text2
+* text3
 
-龜山鄉
-項目符號：
-*   Red
-*   Green
-*   Blue
-或
-+   Red
-+   Green
-+   Blue
-或
--   Red
--   Green
--   Blue
-Red
-Green
-Blue
-1.  Bird
-2.  McHale
-3.  Parish
-Bird
-McHale
-Parish
-水平線：
+6.link
+
+    [linkname](website"the new site")
+
+詳見[Google](https://www.google.com)
+參考想關資料
+或是[youtube markdown tutorial](https://www.youtube.com/watch?v=6A5EpqqDOdk"the new site")
+
+7.表示在深色框框內 
+
+    使用Tab鍵
+    即可使文字內容在框框內
+
+
+9.分隔線
+
+    ***
+    ___
+    ---
+
+
 ***
 或：
 ___
 或：
 ---
-連結測試
-[Google]wwww.google.com
-> 引用
->>引用
->>>引用
 
-空白兩隔  即換行
+10.方便目錄用
 
-<a name="test"/>
-[連連看](#test)
+    >引用
+    >>引用
+    >>>引用
 
 
 
-第二版
+
+12.這是我們的 logo （將滑鼠移到圖片上會顯示圖片標題）：
+
+    [alt text](圖片的網址 https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo example")
+
+行內格式：
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo 標題文字範例一")
+
+參考連結格式：
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo 標題文字範例二"
+
